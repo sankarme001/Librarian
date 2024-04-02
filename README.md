@@ -31,4 +31,8 @@ Librarian is a web application for managing books in a library.
 
     docker-compose up
 
+5. to run the application
+
+    uvicorn main:app --host localhost --port 8000 --reload --debug 
+
 

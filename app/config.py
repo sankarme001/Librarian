@@ -14,7 +14,7 @@ class AppSettings(BaseSettings):
     SQLALCHEMY_DATABASE_URL: str
     SECRET_KEY: str
     ALGORITHIM: str
-    ACCESS_TOKEN_EXPIRE_MINUTES: str
+    ACCESS_TOKEN_EXPIRE_MINUTES: int
     APP_NAME: str = "LIBRARIAN"
 
     class Config:

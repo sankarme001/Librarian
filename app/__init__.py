@@ -1,17 +1,16 @@
-print("Worked")
 import logging
 from fastapi import FastAPI
-print("Worked")
+
 # Importing from internal modules
 from app import models
 from app.database import engine
-print("Worked")
+
 from app.routers import users, auth, books
 from app.config import app_settings
 from app.settings import description
 from app.logging_config import logger
 
-print("Worked")
+
 
 def initialize_app():
     """

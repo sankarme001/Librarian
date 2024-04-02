@@ -5,9 +5,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from app.config import app_settings
 from app.logging_config import logger
 
-logger.info(
-    f"app_settings.SQLALCHEMY_DATABASE_URL{app_settings.SQLALCHEMY_DATABASE_URL}")
-
 # Create the SQLAlchemy engine using the database URL from app_settings
 engine = create_engine(
     app_settings.SQLALCHEMY_DATABASE_URL, pool_pre_ping=True)
